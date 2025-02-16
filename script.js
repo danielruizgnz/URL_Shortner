@@ -12,7 +12,7 @@ function shortenUrl() {
   fetch(apiUrl)
     .then((response) => response.text())
     .then((data) => {
-      shortenedUrlTextarea.value = data + "?source=direct";
+      shortenedUrlTextarea.value = data;
     })
     .catch((error) => {
       shortenedUrlTextarea.value = "Error: No se puede acortar la URL!!";
